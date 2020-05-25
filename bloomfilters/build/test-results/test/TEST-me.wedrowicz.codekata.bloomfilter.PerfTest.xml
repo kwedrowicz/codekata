@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="me.wedrowicz.codekata.bloomfilter.PerfTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-22T18:39:07" hostname="polpc06159" time="104.853">
-  <properties/>
-  <testcase name="should load large wordlist using BloomFilterArrayImplementation implementation" classname="me.wedrowicz.codekata.bloomfilter.PerfTest" time="1.889"/>
-  <testcase name="should load large wordlist using BloomFilterBitSetImplementation implementation" classname="me.wedrowicz.codekata.bloomfilter.PerfTest" time="0.901"/>
-  <testcase name="should load large wordlist using BloomFilterBitOperatorImplementation implementation" classname="me.wedrowicz.codekata.bloomfilter.PerfTest" time="102.06"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
