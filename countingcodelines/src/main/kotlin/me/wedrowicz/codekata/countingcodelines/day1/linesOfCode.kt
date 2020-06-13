@@ -1,4 +1,4 @@
-package me.wedrowicz.codekata.countingcodelines
+package me.wedrowicz.codekata.countingcodelines.day1
 
 import java.net.URL
 

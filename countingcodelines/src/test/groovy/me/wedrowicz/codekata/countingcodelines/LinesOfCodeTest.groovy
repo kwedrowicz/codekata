@@ -1,9 +1,8 @@
 package me.wedrowicz.codekata.countingcodelines
 
+import me.wedrowicz.codekata.countingcodelines.day1.LinesOfCodeKt
 import spock.lang.Specification
 import spock.lang.Unroll
-
-import static me.wedrowicz.codekata.countingcodelines.LinesOfCodeKt.countLinesOfCode
 
 class LinesOfCodeTest extends Specification {
     @Unroll
@@ -11,12 +10,14 @@ class LinesOfCodeTest extends Specification {
         given:
         def url = this.getClass().getClassLoader().getResource(filePath)
         when:
-        def loc = countLinesOfCode(url)
+        def loc = fun(url)
         then:
         loc == expectedLinesOfCode
         where:
-        filePath || expectedLinesOfCode
-        "Dave.java" || 3
-        "Hello.java" || 5
+        fun | filePath || expectedLinesOfCode
+        LinesOfCodeKt.&countLinesOfCode | "Dave.java" || 3
+        me.wedrowicz.codekata.countingcodelines.day2.LinesOfCodeKt.&countLinesOfCode | "Dave.java" || 3
+        LinesOfCodeKt.&countLinesOfCode | "Hello.java" || 5
+        me.wedrowicz.codekata.countingcodelines.day2.LinesOfCodeKt.&countLinesOfCode | "Hello.java" || 5
     }
 }
