@@ -19,5 +19,6 @@ class LinesOfCodeTest extends Specification {
         me.wedrowicz.codekata.countingcodelines.day2.LinesOfCodeKt.&countLinesOfCode | "Dave.java" || 3
         LinesOfCodeKt.&countLinesOfCode | "Hello.java" || 5
         me.wedrowicz.codekata.countingcodelines.day2.LinesOfCodeKt.&countLinesOfCode | "Hello.java" || 5
+        me.wedrowicz.codekata.countingcodelines.day2.LinesOfCodeKt.&countLinesOfCode | "StringWithComment.java" || 5
     }
 }
